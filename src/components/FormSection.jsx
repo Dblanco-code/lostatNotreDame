@@ -8,12 +8,12 @@ const FormSection = ({ generateResponse }) => {
             <textarea
                 rows="5"
                 className="form-control"
-                placeholder="Ask me anything..."
+                placeholder="Where is Duncan Student Center from Alumni Hall"
                 value={newQuestion}
                 onChange={(e) => setNewQuestion(e.target.value)}
             ></textarea>
             <button className="btn" onClick={() => generateResponse(newQuestion, setNewQuestion)}>
-                Generate Response 🤖
+                Submit
             </button>
         </div>
     )
